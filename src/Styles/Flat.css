@@ -1,0 +1,54 @@
+.flat__desc{
+    display: flex; flex-wrap: wrap;
+    padding: 30px 60px;
+}
+.flat__desc-desc{ width: 65%; min-height: 100vh; }
+
+/* ==== flat desc image ==== */
+.flat__desc-image{ width: 100%; overflow: hidden; }
+.flat__desc-image img{ width: 100%; height: 60vh;}
+.flat__desc-imageBox{ display: flex; justify-content: space-between; margin-top: 10px;}
+.flat__desc-imageBox .image{ width: 30%; height: 100px; }
+.flat__desc-imageBox .image { width: 100%; }
+
+/* ==== flat desc name ==== */
+.flat__desc-name{ margin: 20px 0; }
+.flat__desc-name h1{ font-family: var(--primary-font); font-weight: 500; }
+.flat__desc-name h1 span{ font-size: 16px; margin-left: 10px;}
+.flat__desc-name h1 span.price{ float: right; margin-top: 4px; font-weight: 300;}
+.flat__desc-name p{ font-size: 15px; color: #666; font-family: var(--primary-font);}
+
+/* ==== flat desc info ==== */
+.flat__desc-info{ margin: 30px 0; }
+.flat__desc-info .info,
+.flat__desc-info .info .info-desc,
+.flat__desc-info .info .info-desc .info-image { display: flex; align-items: center; }
+.flat__desc-info .info .info-desc { margin-right: 15%; }
+.flat__desc-info .info .info-desc .info-value{ font-family: var(--primary-font); font-size: 15px; }
+.flat__desc-info .info .info-desc .info-image{ 
+    width: 40px; height: 40px; border-radius: 50%;
+    justify-content: center; margin-right: 15px;
+    background: var(--primary-color-light);
+}
+
+/* ==== flat desc description ==== */
+.flat__desc-description{ margin-bottom: 20px; font-family: var(--primary-font); }
+.flat__desc-description h2{
+    font-weight: 500; margin-bottom: 10px;    
+}
+.flat__desc-description p { font-weight: 300; font-size: 15px; }
+
+.flat__desc-button{ margin: 30px 0; display: flex; }
+.flat__desc-button button{ margin-right: 30px; }
+.flat__desc-button .buy-now{
+    padding: 10px 40px; font-size: 18px; font-family: var(--primary-font);
+    background: var(--primary-color-dark); color: #fff; font-weight: 500;
+    outline: none; border: none; cursor: pointer;
+}
+.flat__desc-button .add-to-fvrt{  outline: none; border: none; background: transparent; font-size: 16px; cursor: pointer;}
+.flat__desc-button .add-to-fvrt i{ margin-right: 3px; }
+.flat__desc-button .add-to-fvrt:hover{ color: red; }
+.flat__desc-owner{
+    /* border: 1px solid red; */
+    width: 35%;
+}
