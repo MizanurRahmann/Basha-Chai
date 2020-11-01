@@ -1,0 +1,133 @@
+/*  ================ HEADER SECTION ================= */
+
+header{ height: 90vh; width: 100vw; display: flex; }
+header .heading_text{
+    width: 40vw; height: 100%; position: relative;
+    font-family: var(--primary-font);
+}
+header .heading_text .heading{
+    width: 20vw; margin: auto;
+    position: absolute; top: 25%; left: 50%; transform: translateX(-50%);
+}
+header .heading_text .heading h1{ font-size: 3vw; font-weight: 300; margin-bottom: 20px; color: var(--text-color);}
+header .heading_text .heading .underline{ width: 35%; height: 4px; background: var(--primary-color); border-radius: 4px;}
+header .heading_text .description{ 
+    width: 17vw; margin: auto;
+    position: absolute; top: 55%; left: 35%; translate: translateX(-50%);
+}
+header .heading_text .description p{ color: #444; font-size: 14px; margin-bottom: 1.5vh; }
+/* header image */
+header .heading_image{ width: 60vw; height: 100%; overflow: hidden; }
+header .heading_image .slides{
+    width: 400%; height: 90vh; 
+    position: relative; margin: 0; left: 0;
+    animation: 20s slider infinite;
+}
+header .heading_image .slides .slide{ width: 25%; height: 90vh; float: left;}
+header .heading_image .slides .slide img{ width: 100%; height: 90vh;}
+
+
+@keyframes slider{
+    0%{left: 0%;}
+    28.33%{ left: 0%; }
+    
+    33.33%{ left: -100%; }
+    61.66%{left: -100%;}
+
+    66.66%{left: -200%;}
+    95%{left: -200%; }
+
+    100%{left: -300%; }  
+}
+
+
+/*  ================ ABOUT SECTION ================= */
+
+.about{ display: flex; }
+.left{ width: 40vw; height: 90vh; display: flex; justify-content: center;}
+.left .image_box{ width: 30vw; }
+.left .image_box img{ width: 100%; }
+
+.right{ width: 60vw; }
+.right .options{ width: 100%; display: flex; align-items: center;}
+.right .options .option{ 
+    width: 33.333%; height: 10vh; padding: 10px; cursor: pointer;
+    display: flex; justify-content: center; align-items: center;
+    font-family: var(--primary-font); color: var(--text-color);
+}
+.right .options .option span{ font-size: 12px; margin-top: -15px; margin-right: 10px; }
+.right .options .two{ background: #f1f1f1; }
+.right .options .option a{ text-decoration: none; color: #fff;}
+.right .options .three{ background: #000; }
+.right .services{ padding: 50px; }
+.right .services h1{
+    font-family: var(--primary-font); font-size: 3vw;
+    font-weight: 300; margin-bottom: 20px;
+}
+.right .services .underline{ 
+    width: 20%; height: 4px; background: var(--primary-color); 
+    border-radius: 4px; }
+
+.right .services .service{ display: flex; margin-top: 50px;}
+.right .services .service .logo{ margin-right: 32px; }
+.right .services .service .service-desc{ padding: 0 30px 0 0; font-family: var(--primary-font); }
+.right .services .service .service-desc h2{ margin-bottom: 5px; font-weight: 500; }
+.right .services button.checkout{
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-color-dark));
+    font-family: var(--primary-font); font-size: 18px; color: #fff; font-weight: 500;
+    padding: 15px 50px; margin-top: 40px; border: none; outline: none; border-radius: 0;
+    cursor: pointer; box-shadow: 0 3px 5px rgba(0,0,0,0.4); transition: .3s;
+}
+.right .services button.checkout:hover{ margin-top: 37px; }
+
+
+
+/* ============== RECENT SECTION =============== */
+.recent{ padding: 40px 60px; height: 100vh; }
+.recent h1.head{ font-family: var(--primary-font); font-size: 3vw; font-weight: 300; }
+.recent .subhead{
+    font-family: var(--primary-font); font-size: 2vw; font-weight: 500;
+    position: relative; margin-left: 90px;
+}
+.recent .subhead::before{ 
+    content: '';
+    position: absolute; top: 50%; left: -90px;
+    width: 80px; height: 4px; background-color: var(--primary-color);
+}
+.recent h2 span{ margin-left: 10px; font-size: 16px; color: var(--primary-color-dark); }
+
+
+
+/* ============== recently added FLATS ============ */
+.flats{ display: flex; flex-wrap: wrap; justify-content: space-between; margin-top: 50px;}
+.flats .flat{
+    width: 23%; height: 65vh; background: #fff;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5); transition: .3s;
+}
+.flats .flat:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 10px 10px rgba(0,0,0,0.5);
+}
+.flat .flat-image, .flat .flat-image img{ min-width: 100%; height: 40vh; }
+.flat .flat-image{ overflow: hidden; }
+
+.flat .flat-desc{ padding: 10px 20px; font-family: var(--primary-font); }
+.flat .flat-desc .name{ font-family: var(--primary-font); font-size: 1.5vw; font-weight: 500;}
+.flat .flat-desc .name span{ color: var(--primary-color-dark); font-size: .8vw; font-weight: 600; }
+.flat .flat-desc .id{
+    background: #F5E3E2; color: var(--primary-color-dark);
+    border-radius: 20px; font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px; padding: 5px 10px;
+}
+.flat .flat-desc .location{ color: #666; font-size: 14px; margin-bottom: 10px; }
+.flat .flat-desc .price{ font-size: 15px; color: var(--text-color); font-weight: 400; }
+.flat .flat-desc .price span{ font-size: 18px; color: #000; font-weight: 500; }
+
+.flat .flat-desc button{
+    margin-top: 18px; padding: 5px 15px;
+    outline: none; border: none; border-radius: 0; cursor: pointer;
+    color: #fff; font-size: 16px;
+    background: linear-gradient(45deg, var(--primary-color), var(--primary-color-dark));
+    box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+}
