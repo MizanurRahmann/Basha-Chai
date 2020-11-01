@@ -1,9 +1,22 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+
+import Home from './components/Home/Home';
+import Main from './components/Main/Main';
+import SignIn from './components/Auth/SignIn';
+import SignUp from './components/Auth/SignUp';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      Working
+      <Router>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/items' component={Main} />
+        <Route exact path='/signIn' component={SignIn} />
+        <Route exact path='/signUp' component={SignUp} />
+      </Router>
+      <Footer />
     </div>
   );
 }
