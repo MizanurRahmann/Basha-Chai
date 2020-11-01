@@ -5,8 +5,10 @@ import interior1 from './../../resources/i-1.jpg';
 import interior2 from './../../resources/i-2.jpg';
 import interior3 from './../../resources/i-3.jpg';
 import interior4 from './../../resources/i-4.jpg';
-import serviceBuy from '../../resources/service-buy.svg'
-import serviceRent from '../../resources/service-rent.svg'
+import serviceBuy from '../../resources/service-buy.svg';
+import serviceRent from '../../resources/service-rent.svg';
+import bed from '../../resources/d-bed.svg';
+import bath from '../../resources/d-bath.svg';
 import '../../Styles/Home.css';
 
 function Home() {
@@ -73,7 +75,7 @@ function Home() {
             {/* ========= RECENT RENT SECTION ========= */}
             <section class="recent">
                 <h1 class="head">Recently added</h1>
-                <h2 class="subhead">For Rent <span>32 +</span></h2>
+                <h2 class="subhead">For Rent <span>32 + view more</span></h2>
 
                 <div class="flats">
                     {/* --- flat --- */}
@@ -84,6 +86,10 @@ function Home() {
                         <div class="flat-desc">
                             <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
                             <p class="location">Dhanmondi 32, Dhaka</p>
+                            <div className="spec">
+                                <div className="spec-opt"><img src={bed} width="16px"/> 3</div>
+                                <div className="spec-opt"><img src={bath} width="16px"/> 2</div>
+                            </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
                             <button type="button"><i class="far fa-eye"></i> details</button>
                         </div>
@@ -96,6 +102,10 @@ function Home() {
                         <div class="flat-desc">
                             <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
                             <p class="location">Dhanmondi 32, Dhaka</p>
+                            <div className="spec">
+                                <div className="spec-opt"><img src={bed} width="16px"/> 5</div>
+                                <div className="spec-opt"><img src={bath} width="16px"/> 3</div>
+                            </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
                             <button type="button"><i class="far fa-eye"></i> details</button>
                         </div>
@@ -108,6 +118,10 @@ function Home() {
                         <div class="flat-desc">
                             <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
                             <p class="location">Dhanmondi 32, Dhaka</p>
+                            <div className="spec">
+                                <div className="spec-opt"><img src={bed} width="16px"/> 3</div>
+                                <div className="spec-opt"><img src={bath} width="16px"/> 2</div>
+                            </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
                             <button type="button"><i class="far fa-eye"></i> details</button>
                         </div>
@@ -120,6 +134,10 @@ function Home() {
                         <div class="flat-desc">
                             <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
                             <p class="location">Dhanmondi 32, Dhaka</p>
+                            <div className="spec">
+                                <div className="spec-opt"><img src={bed} width="16px"/> 2</div>
+                                <div className="spec-opt"><img src={bath} width="16px"/> 1</div>
+                            </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
                             <button type="button"><i class="far fa-eye"></i> details</button>
                         </div>
