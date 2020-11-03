@@ -48,7 +48,50 @@
 .flat__desc-button .add-to-fvrt{  outline: none; border: none; background: transparent; font-size: 16px; cursor: pointer;}
 .flat__desc-button .add-to-fvrt i{ margin-right: 3px; }
 .flat__desc-button .add-to-fvrt:hover{ color: red; }
+
+
 .flat__desc-owner{
-    /* border: 1px solid red; */
     width: 35%;
+    padding: 0 0 0 30px;
+    /* background: #fff; */
 }
+.flat__desc-owner .owner-info{ display: flex; align-items: center; }
+.owner-info .owner-image{ margin-right: 10px; }
+.owner-info .owner-image img{ width: 80px; height: 80px; border-radius: 50%; }
+.owner-info .owner-name{ font-family: var(--primary-font); }
+.owner-info .owner-name h2{ font-weight: 500; }
+.owner-info .owner-name p{ color: #666; font-size: 15px; margin: -5px 0 8px 0;}
+.owner-info .owner-name a{ text-decoration: none; color: var(--primary-color);}
+.owner-info .owner-name a:hover{ color: var(--primary-color-dark); }
+.owner-description{ margin: 20px 0; font-family: var(--primary-font); color: #444; font-size: 15px;}
+
+.owner-contact-info{ display: flex; font-family: var(--primary-font); margin-bottom: 10px;}
+.owner-contact-info .title{ width: 40%; font-weight: 500;}
+.owner-contact-info .value{ width: 60%; font-weight: 300;}
+.contactWith{ margin-top: 30px; }
+.contactWith .value{ display: flex; align-items: center;}
+.contactWith .email,
+.contactWith .call{
+    background: var(--primary-color-light); color: var(--primary-color-dark);
+    padding: 3px 15px; border-radius: 20px; font-weight: 500;
+    font-size: 16px; display: flex; align-items: center;
+}
+.contactWith .call i,
+.contactWith .email i{ font-size: 14px; margin-right: 5px;}
+.contactWith .email{ margin-left: 10px; }
+
+.relatedFlats h2{ font-family: var(--primary-font); font-weight: 500; margin-top: 40px;}
+.relatedflat{ 
+    display: flex; margin-top: 25px; box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    border-radius: 5px; height: 15vh; transition: .3s; cursor: pointer;
+}
+.relatedflat:hover{ transform: scale(1.05); }
+.relatedflat .flat-image{ width: 30%; }
+.relatedflat .flat-image img{ width: 100%; height: 100%; border-radius: 5px;}
+.relatedflat .flat-desc{ 
+    width: 70%; margin-left: 10px; font-family: var(--primary-font);
+}
+.relatedflat .flat-desc p{ color: #666; font-size: 15px; margin-top: -3px;}
+.relatedflat .flat-desc .specs{ display: flex; margin-top: 15px;}
+.relatedflat .flat-desc .spec{ display: flex; margin-right: 10%;}
+.relatedflat .flat-desc .spec img{ margin-right: 5px; }
