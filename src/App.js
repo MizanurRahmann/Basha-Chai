@@ -7,12 +7,17 @@ import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import Footer from './components/Footer/Footer';
 import Flat from './components/Flat/Flat';
+import Navbar from './components/Navigation/Navbar';
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path='/' component={Flat} />
+        <Route exact path='/'>
+            <Navbar />
+            <Flat />
+        </Route>
+        
         <Route exact path='/items' component={Main} />
         <Route exact path='/signIn' component={SignIn} />
         <Route exact path='/signUp' component={SignUp} />

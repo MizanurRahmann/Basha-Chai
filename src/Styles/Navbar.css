@@ -1,0 +1,15 @@
+.navbar{
+    padding: 10px 40px;
+    border: 1px solid red;
+    font-family: var(--primary-font); font-weight: 400;
+    display: flex; align-items: center; justify-content: space-between;
+}
+.navbar .brand a{ font-size: 18px; font-weight: 300; text-decoration: none; color: #000; }
+.navbar .brand a span{ font-weight: 500; }
+.navbar .options{ display: flex; align-items: center;}
+.navbar .options a{ margin-right: 20px; text-decoration: none; color: #444; font-weight: 500;}
+.navbar .options a:hover{ color: var(--primary-color-dark); }
+.navbar .options .user img { width: 40px; height: 40px; border-radius: 50%;}
+.navbar .search{ width: 30%; }
+.navbar .search .field{ display: flex; align-items: center; width: 100%; background: #fff; padding: 8px 20px; border-radius: 30px; border: 1px solid #ccc;}
+.navbar .search .field input{ padding: 5px; width: 100%; border: none; outline: none; background: transparent; font-size: 16px;}
