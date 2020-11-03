@@ -1,8 +1,12 @@
 .flat__desc{
     display: flex; flex-wrap: wrap;
-    padding: 30px 60px;
+    margin-top: 80px;
+    /* padding: 30px 60px; */
 }
-.flat__desc-desc{ width: 65%; min-height: 100vh; }
+.flat__desc-desc{
+    width: calc(65% - 80px); min-height: 100vh; background: #fff; margin: 10px 40px;
+    padding: 20px; border-radius: 10px;
+}
 
 /* ==== flat desc image ==== */
 .flat__desc-image{ width: 100%; overflow: hidden; }
@@ -50,10 +54,10 @@
 .flat__desc-button .add-to-fvrt:hover{ color: red; }
 
 
-.flat__desc-owner{
-    width: 35%;
-    padding: 0 0 0 30px;
-    /* background: #fff; */
+.flat__desc-owner{ 
+    width: calc(35% - 40px); height: max-content;
+    border-radius: 10px; background: #fff;
+    margin: 10px 40px 40px 0; padding: 20px;
 }
 .flat__desc-owner .owner-info{ display: flex; align-items: center; }
 .owner-info .owner-image{ margin-right: 10px; }
@@ -82,7 +86,7 @@
 
 .relatedFlats h2{ font-family: var(--primary-font); font-weight: 500; margin-top: 40px;}
 .relatedflat{ 
-    display: flex; margin-top: 25px; box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+    display: flex; margin-top: 25px; box-shadow: 0 0 8px rgba(0,0,0,0.3);
     border-radius: 5px; height: 15vh; transition: .3s; cursor: pointer;
 }
 .relatedflat:hover{ transform: scale(1.05); }
