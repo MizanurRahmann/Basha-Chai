@@ -21,8 +21,8 @@ function App() {
         <Route exact path='/items' component={Main} />
         <Route exact path='/signIn' component={SignIn} />
         <Route exact path='/signUp' component={SignUp} />
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

@@ -1,0 +1,44 @@
+.footer{
+    width: 100%; min-height: 20vh; margin-top: 50px;
+    background: #444; color: #fff;
+    display: flex; padding: 40px 80px;
+    font-family: var(--primary-font);
+}
+
+.basic, .contact{ width: 30%;}
+.rent, .buy{ width: 20%; padding: 0 20px 0 50px;}
+
+.basic h1 span{ font-weight: 600; color: var(--primary-color-dark);}
+.basic h1 { font-weight: 300; margin-bottom: 10px;}
+.basic p{ font-size: 15px; margin-bottom: 30px;}
+.basic a{ 
+    text-decoration: none; color: #fff; border-radius: 5px;
+    padding: 10px 20px; background: var(--primary-color-dark);
+    font-size: 15px; line-height: 15px; transition: .3s;
+}
+.basic a:hover{ background: var(--primary-color); }
+
+
+.rent h2, .buy h2, .contact h2{ font-weight: 500; margin-bottom: 20px; position: relative;}
+.rent h2::after, .buy h2::after, .contact h2::after{
+    content: ''; position: absolute; bottom: -10px; left: 0;
+    width: 20%; height: 3px; background: var(--primary-color-dark);
+}
+.rent a, .buy a{
+    text-decoration: none; color: #fff;
+    display: block; margin-bottom: 10px;
+}
+.rent a:hover, .buy a:hover{ color: var(--primary-color-dark); }
+
+
+.contact h3{ text-transform: uppercase; font-weight: 400; font-size: 16px; }
+.contact p{ margin-top: 10px; }
+.contact .social{ display: flex; margin-top: 20px;}
+.contact .social a{
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--primary-color-dark); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    text-decoration: none; margin-right: 15px;
+}
+.contact .social a svg{ width: 18px; height: 18px; }
+.contact .social a:hover{ background: var(--primary-color); }
