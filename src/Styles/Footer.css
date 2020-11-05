@@ -5,22 +5,29 @@
     font-family: var(--primary-font);
 }
 
-.basic, .contact{ width: 30%;}
-.rent, .buy{ width: 20%; padding: 0 20px 0 50px;}
+.basic, .contact, .rent, .buy{ width: 25%;}
+/* .rent, .buy{ width: 20%; padding: 0 20px 0 50px;} */
 
 .basic h1 span{ font-weight: 600; color: var(--primary-color-dark);}
 .basic h1 { font-weight: 300; margin-bottom: 10px;}
 .basic p{ font-size: 15px; margin-bottom: 30px;}
-.basic a{ 
-    text-decoration: none; color: #fff; border-radius: 5px;
-    padding: 10px 20px; background: var(--primary-color-dark);
-    font-size: 15px; line-height: 15px; transition: .3s;
+
+.basic a{
+    text-decoration: none;
+    color: #fff; font-size: 15px;
+    display: block; margin-bottom: 10px;
 }
-.basic a:hover{ background: var(--primary-color); }
+.basic svg{ width: 15px; height: 15px; margin-right: 5px;}
 
 
-.rent h2, .buy h2, .contact h2{ font-weight: 500; margin-bottom: 20px; position: relative;}
-.rent h2::after, .buy h2::after, .contact h2::after{
+.basic h2,
+.rent h2,
+.buy h2,
+.contact h2{
+    font-weight: 500; margin-bottom: 25px; position: relative;
+}
+
+.basic h2::after, .rent h2::after, .buy h2::after, .contact h2::after{
     content: ''; position: absolute; bottom: -10px; left: 0;
     width: 20%; height: 3px; background: var(--primary-color-dark);
 }
@@ -31,8 +38,8 @@
 .rent a:hover, .buy a:hover{ color: var(--primary-color-dark); }
 
 
-.contact h3{ text-transform: uppercase; font-weight: 400; font-size: 16px; }
-.contact p{ margin-top: 10px; }
+.basic h3, .contact h3{ text-transform: uppercase; font-weight: 400; font-size: 16px; }
+.contact p{ margin-top: 10px; font-size: 15px;}
 .contact .social{ display: flex; margin-top: 20px;}
 .contact .social a{
     width: 40px; height: 40px; border-radius: 50%;
