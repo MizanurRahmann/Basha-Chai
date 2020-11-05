@@ -36,12 +36,16 @@
 }
 
 /* ==== flat desc description ==== */
-.flat__desc-description{ margin-bottom: 20px; font-family: var(--primary-font); }
-.flat__desc-description h2{
-    font-weight: 500; margin-bottom: 10px;    
+.flat__desc-price-in-mobile { display: none; }
+.flat__desc-description, .flat__desc-price-in-mobile{
+    margin-bottom: 20px; font-family: var(--primary-font);
 }
+.flat__desc-description h2{ font-weight: 500; margin-bottom: 10px;     }
+.flat__desc-price-in-mobile h2{ font-size: 18px; font-weight: 500;}
+.flat__desc-price-in-mobile h2 strong{ font-size: 16px; font-weight: 300;}
 .flat__desc-description p { font-weight: 300; font-size: 15px; }
 
+/* ==== flat desc button ==== */
 .flat__desc-button{ margin: 30px 0; display: flex; }
 .flat__desc-button button{ margin-right: 30px; }
 .flat__desc-button .buy-now{
@@ -99,3 +103,37 @@
 .relatedflat .flat-desc .specs{ display: flex; margin-top: 15px;}
 .relatedflat .flat-desc .spec{ display: flex; margin-right: 10%;}
 .relatedflat .flat-desc .spec img{ margin-right: 5px; }
+
+
+
+
+@media (max-width: 768px){ 
+    .flat__desc-image img{ height: 30vh;}
+    .flat__desc-imageBox .image{ height: 50px; }
+    .flat__desc-desc{ width: 100%; margin: 0; }
+    .flat__desc-name{ margin: 20px 0; }
+    .flat__desc-name h1{ font-size: 25px; }
+    .flat__desc-name h1 span{ display: none; }
+    .flat__desc-info{ margin: 20px 0; }
+    .flat__desc-info .info,
+    .flat__desc-info .info .info-desc,
+    .flat__desc-info .info .info-desc .info-image { margin: auto; }
+    .flat__desc-info .info .info-desc { margin-right: 10%; }
+    .flat__desc-info .info .info-desc .info-value span{ display: none; }
+    .flat__desc-info .info .info-desc .info-image{ 
+        width: 40px; height: 40px; margin-right: 0;
+        background: transparent;
+    }
+    .flat__desc-price-in-mobile { display: block; }
+    .flat__desc-button{ margin: 20px 0; }
+    .flat__desc-button button{ margin-right: 15px; }
+    .flat__desc-button .buy-now{padding: 10px 20px; font-size: 16px;}
+    .flat__desc-button .add-to-fvrt{font-size: 15px;}
+    .flat__desc-button .add-to-fvrt i{ margin-right: 3px; }
+
+    .flat__desc-owner{ 
+        width: 100%; height: max-content;
+        margin: 0;
+    }
+    .relatedflat{margin-top: 20px; height: 17vh;}
+}

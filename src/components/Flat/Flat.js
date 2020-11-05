@@ -35,16 +35,21 @@ function Flat() {
                     <p>Beside Passport Office, Gohail road, Bogra 5800, Bogra</p>
                 </div>
 
+                {/* --- flat price in mobile view --- */}
+                <div className="flat__desc-price-in-mobile">
+                    <h2 className="price-mobile-view">Starts form : <strong>12,000 ৳</strong></h2>
+                </div>
+
                 {/* --- flat short info --- */}
                 <div className="flat__desc-info">
                     <div className="info">
                         <div className="info-desc">
                             <div className="info-image"><img src={bed} width="18px" alt="" /></div>
-                            <div className="info-value"><strong>3</strong> Bedrooms</div>
+                            <div className="info-value"><strong>3</strong> <span>Bedrooms</span></div>
                         </div>
                         <div className="info-desc">
                             <div className="info-image"><img src={bath} width="18px" alt="" /></div>
-                            <div className="info-value"><strong>2</strong> Bathrooms</div>
+                            <div className="info-value"><strong>2</strong> <span>Bathrooms</span></div>
                         </div>
                         <div className="info-desc">
                             <div className="info-image"><img src={space} width="18px" alt="" /></div>
@@ -66,7 +71,7 @@ function Flat() {
 
                 {/* --- flat buy button --- */}
                 <div className="flat__desc-button">
-                    <button className="buy-now">Book now</button>
+                    <button className="buy-now">Contact Now</button>
                     <button className="add-to-fvrt"><i class="far fa-heart"></i> Add to favourite</button>
                 </div>
             </div>
