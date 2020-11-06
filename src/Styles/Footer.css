@@ -1,7 +1,7 @@
 .footer{
     width: 100%; min-height: 20vh; margin-top: 50px;
     background: #444; color: #fff;
-    display: flex; padding: 40px 80px;
+    display: flex; flex-wrap: wrap; padding: 40px 80px;
     font-family: var(--primary-font);
 }
 
@@ -49,3 +49,10 @@
 }
 .contact .social a svg{ width: 18px; height: 18px; }
 .contact .social a:hover{ background: var(--primary-color); }
+
+
+@media (max-width: 768px){
+    .footer{ padding: 40px 40px 0 40px; }
+    .basic, .contact, .rent, .buy{ width: 100%; margin-bottom: 50px;}
+    .rent, .buy{ width: 50%; }
+}
