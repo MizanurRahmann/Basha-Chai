@@ -108,9 +108,10 @@
 
 
 @media (max-width: 768px){ 
+    .flat__desc{ padding: 0 10px; }
     .flat__desc-image img{ height: 30vh;}
     .flat__desc-imageBox .image{ height: 50px; }
-    .flat__desc-desc{ width: 100%; margin: 0; }
+    .flat__desc-desc{ width: 100%; margin: 0; border-radius: 0;}
     .flat__desc-name{ margin: 20px 0; }
     .flat__desc-name h1{ font-size: 25px; }
     .flat__desc-name h1 span{ display: none; }
@@ -133,7 +134,7 @@
 
     .flat__desc-owner{ 
         width: 100%; height: max-content;
-        margin: 0;
+        margin: 0; margin-top: 10px; border-radius: 0;
     }
     .relatedflat{margin-top: 20px; height: 17vh;}
 }
