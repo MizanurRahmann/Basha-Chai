@@ -19,7 +19,7 @@ function Banner() {
             <div className="banner">
                 <img src={bannerImage} alt="" height="100%" />
                 <div className="text">
-                    <h1><span>Get</span>15%<span> on rent</span></h1>
+                    <h1><span>Get</span>15%<span> less on RENT</span></h1>
                     <h3>Black friday offer 🎉</h3>
                 </div>
             </div>
@@ -27,7 +27,7 @@ function Banner() {
             <div className="banner">
                 <img src={bannerImage2} alt="" height="100%" />
                 <div className="text">
-                    <h1><span>Get</span>10%<span> on sell</span></h1>
+                    <h1><span>Get</span>10%<span> less on BUY</span></h1>
                     <h3>Black friday offer 🎉</h3>
                 </div>
             </div>
