@@ -4,6 +4,7 @@
   --primary-color-light: #feceab;
   --text-color: #333;
   --primary-font: 'Quicksand', sans-serif;
+  --primary-font-bold: 'Fredoka One', cursive;
 }
 *{
   margin: 0; padding: 0;

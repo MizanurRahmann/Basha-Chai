@@ -1,0 +1,18 @@
+.flatList{
+    margin-top: 85px; padding: 20px 40px;
+    display: flex; min-height: 100vh;
+}
+.sideContent{ width: 20%; }
+.mainContent{ width: 80%;}
+
+/*  ====== BANNER SECTION ====== */
+.banner{
+    height: 50vh; width: 100%;
+    background: #eee; margin-bottom: 10vh; border-radius: 10px;
+    position: relative;
+}
+.banner img{ float: right; height: 55vh; margin-top: -5vh; margin-right: 20px; border-bottom: 10px solid #413E59;}
+.banner .text{ position: absolute; top: 10%; left: 5%; padding: 20px;}
+.banner .text h1{ font-size: 10vh; font-family: var(--primary-font-bold); color: var(--primary-color-dark);}
+.banner .text h1 span{ margin-right: 10px; font-size: 20px; font-family: var(--primary-font); color: #413E59;}
+.banner .text h3{ font-size: 16px; font-family: var(--primary-font); color: #413E59;}

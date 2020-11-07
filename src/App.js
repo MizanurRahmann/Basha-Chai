@@ -8,6 +8,7 @@ import SignUp from './components/Auth/SignUp';
 import Footer from './components/Footer/Footer';
 import Flat from './components/Flat/Flat';
 import Navbar from './components/Navigation/Navbar';
+import FlatList from './components/FlatList/FlatList';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Router>
         <Route exact path='/'>
             <Navbar />
-            <Flat />
+            {/* <Flat /> */}
+            <FlatList />
         </Route>
         
         <Route exact path='/items' component={Main} />
