@@ -4,6 +4,7 @@
     display: flex; align-items: center; justify-content: space-between;
     box-shadow: 0px 10px 30px rgba(40, 39, 45, 0.105);
     background: #f7f7f7; width: 100%; position: fixed; top: 0; left: 0;
+    z-index: 1000;
 }
 .navbar .brand a{ font-size: 18px; font-weight: 300; text-decoration: none; color: #000; }
 .navbar .brand a span{ font-weight: 500; }

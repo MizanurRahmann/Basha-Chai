@@ -22,7 +22,7 @@ function FlatList() {
                 <Banner />
 
                 {/* ====== FLATS FOR RENT ===== */}
-                <h1>Flats for Rent</h1>
+                <h1 className="heading">Flats for Rent</h1>
                 <div className="flats">
                     {/* --- single flat --- */}
                     <div class="flat">
