@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Banner from './Banner';
 import '../../Styles/FlatList.css';
 import SideContent from './SideContent';
 import { Link } from 'react-router-dom';
 
 // resources
+import data from '../../resources/data';
 import interior1 from './../../resources/i-1.jpg';
 import interior2 from './../../resources/i-2.jpg';
 import interior3 from './../../resources/i-3.jpg';
@@ -15,6 +16,13 @@ import bed from '../../resources/d-bed.svg';
 import bath from '../../resources/d-bath.svg';
 
 function FlatList() {
+    const [flats, setFlats] = useState([])
+
+    useEffect(() => {
+        setFlats(data);
+    }, []);
+
+
     return (
         <div className="flatList">
             <div className="sideContent">
@@ -26,106 +34,45 @@ function FlatList() {
                 {/* ====== FLATS FOR RENT ===== */}
                 <h1 className="heading">Flats for Rent</h1>
                 <div className="flats">
-                    {/* --- single flat --- */}
-                    <Link to="/items/1" class="flat">
-                        <div class="flat-image">
-                            <img src={interior1} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
+                    {flats.map(flat => (
+                        <Link to={"/items/6 +" + flat.id} class="flat">
+                            <div class="flat-image">
+                                <img src={interior1} alt="" />
                             </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/1"  className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
+                            <div class="flat-desc">
+                                <h2 class="name">{flat.name}<span>apt. {flat.id}</span></h2>
+                                <p class="location">{flat.shortAddress}</p>
+                                <div className="spec">
+                                    <div className="spec-opt"><img src={bed} width="16px" /> {flat.bedrooms}</div>
+                                    <div className="spec-opt"><img src={bath} width="16px" /> {flat.bathrooms}</div>
+                                </div>
+                                <p class="price">Starts form : <span>{flat.price} ৳</span></p>
+                                <Link to="/items/6" className="details-btn"><i class="far fa-eye"></i> details</Link>
+                            </div>
+                        </Link>
+                    ))}
+                </div>
 
-                    {/* --- single flat --- */}
-                    <Link to="/items/2" class="flat">
-                        <div class="flat-image">
-                            <img src={interior2} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
+                {/* ====== FLATS FOR SELL ===== */}
+                <h1 className="heading">Flats for SELL</h1>
+                <div className="flats">
+                    {flats.map(flat => (
+                        <Link to={"/items/6 +" + flat.id} class="flat">
+                            <div class="flat-image">
+                                <img src={interior2} alt="" />
                             </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/2" className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
-
-                    {/* --- single flat --- */}
-                    <Link to="/items/3" class="flat">
-                        <div class="flat-image">
-                            <img src={interior3} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
+                            <div class="flat-desc">
+                                <h2 class="name">{flat.name}<span>apt. {flat.id}</span></h2>
+                                <p class="location">{flat.shortAddress}</p>
+                                <div className="spec">
+                                    <div className="spec-opt"><img src={bed} width="16px" /> {flat.bedrooms}</div>
+                                    <div className="spec-opt"><img src={bath} width="16px" /> {flat.bathrooms}</div>
+                                </div>
+                                <p class="price">Starts form : <span>{flat.price} ৳</span></p>
+                                <Link to="/items/6" className="details-btn"><i class="far fa-eye"></i> details</Link>
                             </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/3" className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
-
-                    {/* --- single flat --- */}
-                    <Link to="/items/4" className="flat">
-                        <div class="flat-image">
-                            <img src={interior4} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
-                            </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/4" className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
-
-                    {/* --- single flat --- */}
-                    <Link to="/items/5" class="flat">
-                        <div class="flat-image">
-                            <img src={interior5} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
-                            </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/5" className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
-                    {/* --- single flat --- */}
-                    <Link to="/items/6" class="flat">
-                        <div class="flat-image">
-                            <img src={interior6} alt="" />
-                        </div>
-                        <div class="flat-desc">
-                            <h2 class="name">Lacy Straveue <span>apt. 053</span></h2>
-                            <p class="location">Dhanmondi 32, Dhaka</p>
-                            <div className="spec">
-                                <div className="spec-opt"><img src={bed} width="16px" /> 3</div>
-                                <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
-                            </div>
-                            <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <Link to="/items/6" className="details-btn"><i class="far fa-eye"></i> details</Link>
-                        </div>
-                    </Link>
+                        </Link>
+                    ))}
                 </div>
 
             </div>
