@@ -14,14 +14,15 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Route exact path='/'>
-            <Navbar />
-            {/* <Flat /> */}
-            <FlatList />
+        <Route exact path='/'><Home /></Route>
+        <Route exact path='/items'>
+          <Navbar />
+          <FlatList />
         </Route>
-        
-        <Route exact path='/items' component={Main} />
-        <Route exact path='/items/:id' component={Flat} />
+        <Route exact path='/items/:id'>
+          <Navbar />
+          <Flat />
+        </Route>
         <Route exact path='/signIn' component={SignIn} />
         <Route exact path='/signUp' component={SignUp} />
         <Footer />

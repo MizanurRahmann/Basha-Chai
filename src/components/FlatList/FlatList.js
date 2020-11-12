@@ -35,7 +35,7 @@ function FlatList() {
                 <h1 className="heading">Flats for Rent</h1>
                 <div className="flats">
                     {flats.map(flat => (
-                        <Link to={"/items/6 +" + flat.id} class="flat">
+                        <Link to={"/items/" + flat.id} class="flat">
                             <div class="flat-image">
                                 <img src={interior1} alt="" />
                             </div>
@@ -57,7 +57,7 @@ function FlatList() {
                 <h1 className="heading">Flats for SELL</h1>
                 <div className="flats">
                     {flats.map(flat => (
-                        <Link to={"/items/6 +" + flat.id} class="flat">
+                        <Link to={"/items/" + flat.id} class="flat">
                             <div class="flat-image">
                                 <img src={interior2} alt="" />
                             </div>
