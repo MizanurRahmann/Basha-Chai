@@ -107,6 +107,7 @@ header .heading_image .slides .slide img{ width: 100%; height: 90vh;}
 .flats .flat{
     width: 23%; height: 65vh; background: #fff;
     box-shadow: 0 5px 5px rgba(0,0,0,0.5); transition: .3s;
+    text-decoration: none; color: #333;
 }
 .flats .flat:hover{
     transform: scale(1.05);
@@ -127,11 +128,11 @@ header .heading_image .slides .slide img{ width: 100%; height: 90vh;}
 .flat .flat-desc .spec{ display: flex; align-items: center; margin-bottom: -10px;}
 .flat .flat-desc .spec .spec-opt{ margin-right: 25px; font-size: 15px; color: #444;}
 .flat .flat-desc .location{ color: #666; font-size: 14px; margin-bottom: 20px; }
-.flat .flat-desc .price{ font-size: 15px; color: var(--text-color); font-weight: 400; }
+.flat .flat-desc .price{ font-size: 15px; color: var(--text-color); font-weight: 400; margin-bottom: 18px; }
 .flat .flat-desc .price span{ font-size: 18px; color: #000; font-weight: 500; }
 
-.flat .flat-desc button{
-    margin-top: 18px; padding: 8px 20px;
+.flat .flat-desc a.details-btn{
+    padding: 8px 20px; text-decoration: none;
     outline: none; border: none; border-radius: 0; cursor: pointer;
     color: #fff; font-size: 16px;
     background: linear-gradient(45deg, var(--primary-color), var(--primary-color-dark));

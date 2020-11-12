@@ -2,7 +2,9 @@ import React from 'react';
 import Banner from './Banner';
 import '../../Styles/FlatList.css';
 import SideContent from './SideContent';
+import { Link } from 'react-router-dom';
 
+// resources
 import interior1 from './../../resources/i-1.jpg';
 import interior2 from './../../resources/i-2.jpg';
 import interior3 from './../../resources/i-3.jpg';
@@ -25,7 +27,7 @@ function FlatList() {
                 <h1 className="heading">Flats for Rent</h1>
                 <div className="flats">
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/1" class="flat">
                         <div class="flat-image">
                             <img src={interior1} alt="" />
                         </div>
@@ -37,12 +39,12 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/1"  className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/2" class="flat">
                         <div class="flat-image">
                             <img src={interior2} alt="" />
                         </div>
@@ -54,12 +56,12 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/2" className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/3" class="flat">
                         <div class="flat-image">
                             <img src={interior3} alt="" />
                         </div>
@@ -71,12 +73,12 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/3" className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/4" className="flat">
                         <div class="flat-image">
                             <img src={interior4} alt="" />
                         </div>
@@ -88,12 +90,12 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/4" className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
 
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/5" class="flat">
                         <div class="flat-image">
                             <img src={interior5} alt="" />
                         </div>
@@ -105,11 +107,11 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/5" className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
                     {/* --- single flat --- */}
-                    <div class="flat">
+                    <Link to="/items/6" class="flat">
                         <div class="flat-image">
                             <img src={interior6} alt="" />
                         </div>
@@ -121,9 +123,9 @@ function FlatList() {
                                 <div className="spec-opt"><img src={bath} width="16px" /> 2</div>
                             </div>
                             <p class="price">Starts form : <span>8,000 ৳</span></p>
-                            <button type="button"><i class="far fa-eye"></i> details</button>
+                            <Link to="/items/6" className="details-btn"><i class="far fa-eye"></i> details</Link>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
             </div>

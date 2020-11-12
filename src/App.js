@@ -21,6 +21,7 @@ function App() {
         </Route>
         
         <Route exact path='/items' component={Main} />
+        <Route exact path='/items/:id' component={Flat} />
         <Route exact path='/signIn' component={SignIn} />
         <Route exact path='/signUp' component={SignUp} />
         <Footer />
