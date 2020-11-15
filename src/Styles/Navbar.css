@@ -15,3 +15,10 @@
 .navbar .search{ width: 30%; }
 .navbar .search .field{ display: flex; align-items: center; width: 100%; background: #fff; padding: 8px 20px; border-radius: 30px; border: 1px solid #ccc;}
 .navbar .search .field input{ padding: 5px 10px; width: 100%; border: none; outline: none; background: transparent; font-size: 16px;}
+
+@media (max-width: 768px){
+    .navbar{padding: 10px;}
+    .navbar .search .field{ display: none; }
+    .navbar .options a{ margin-right: 15px; font-size: 15px;}
+    .navbar .options .user img { width: 30px; height: 30px;}
+}
